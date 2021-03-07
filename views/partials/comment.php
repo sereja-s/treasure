@@ -27,7 +27,7 @@
 <?php if (!Yii::$app->user->isGuest) : ?>
 	<div class="leave-comment">
 		<!--leave comment-->
-		<h4>Leave a reply</h4>
+		<h4>Комментарий</h4>
 		<?php if (Yii::$app->session->getFlash('comment')) : ?>
 			<div class="alert alert-success" role="alert">
 				<?= Yii::$app->session->getFlash('comment'); ?>
@@ -42,7 +42,7 @@
 				<?= $form->field($commentForm, 'comment')->textarea(['class' => 'form-control', 'placeholder' => 'Write Message'])->label(false) ?>
 			</div>
 		</div>
-		<button type="submit" class="btn send-btn">Post Comment</button>
+		<button type="submit" class="btn send-btn">отправить</button>
 		<?php \yii\widgets\ActiveForm::end(); ?>
 	</div>
 	<!--end leave comment-->
